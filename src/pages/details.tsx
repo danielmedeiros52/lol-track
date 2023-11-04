@@ -1,7 +1,7 @@
 import React from 'react';
 
 import SEO from '@/components/atoms/SEO';
-
+// https://ddragon.leagueoflegends.com/cdn/13.21.1/data/pt_BR/champion.json
 const seoInfo = {
   title: 'LoL | Home',
   url: 'http://localhost:3000/',
