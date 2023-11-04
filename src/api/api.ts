@@ -1,7 +1,10 @@
-import { UserRequestApiFilter } from '@/types/userRequestApiFilter';
 import axios from './axios';
 
 const apiroutes = {
+champions:{
+getAllChampions: () => axios.get('/champion.json'),
+},
+
   payment: {
     createPayment: (data: any) => axios.post('/payments/payment/', data),
     createMembership: (data: any) => axios.post('/payments/create-membership/', data)
@@ -21,7 +24,7 @@ const apiroutes = {
   },
   user: {
     getUserById: (id: string) => axios.get(`/users/${id}`),
-    getUserByText: (params: UserRequestApiFilter) => axios.get(`/users/filter/?`, { params }),
+    // getUserByText: (params: UserRequestApiFilter) => axios.get(`/users/filter/?`, { params }),
     getConnections: () => axios.get('/users/connections/'),
     connections: (params: any) => axios.get('/users/connections/', { params }),
     deleteConnection: (id: number) => axios.delete(`/users/connections/${id}`),

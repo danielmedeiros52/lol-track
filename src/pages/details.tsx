@@ -1,7 +1,8 @@
 import React from 'react';
 
 import SEO from '@/components/atoms/SEO';
-// https://ddragon.leagueoflegends.com/cdn/13.21.1/data/pt_BR/champion.json
+import { getAllChampions } from '@/actions/riot';
+import ChampionCard from '@/components/template/Champions';
 const seoInfo = {
   title: 'LoL | Home',
   url: 'http://localhost:3000/',
@@ -14,14 +15,28 @@ const seoInfo = {
   }
 };
 
-const registration = () => {
+const Home = ({ data }) => {
+  const champions = Object.values(data.data);
+  console.log(champions)
+
   return (
     <>
       <SEO SEOinformation={seoInfo} />
-      <span>Details</span>
+      <div className="container mx-auto p-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          {champions.map((champion) => (
+            <ChampionCard key={champion.id} champion={champion} />
+          ))}
+        </div>
+      </div>
     </>
   );
 };
 
-export default registration;
+export async function getServerSideProps() {
+  const data = await getAllChampions();
+  return { props: { data } };
+}
+
+export default Home;
 
