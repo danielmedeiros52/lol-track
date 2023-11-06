@@ -2,7 +2,7 @@ import axios from './axios';
 
 const apiroutes = {
 champions:{
-getAllChampions: () => axios.get('/champion.json'),
+getAllChampions: () => axios.get('/data/pt_BR/champion.json'),
 },
 
   payment: {

@@ -33,6 +33,7 @@
     "redux-thunk": "^2.4.2",
     "styled-components": "^6.1.0",
     "ts-node": "^10.9.1",
+    "twin.macro": "^3.4.0",
     "typescript": "5.0.4"
   },
   "devDependencies": {
