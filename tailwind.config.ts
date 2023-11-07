@@ -7,6 +7,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        azure: {
+          500: '#0077b3'
+        },
+        whisper: '#f5f5f5',
+        coral: '#ff7f50', // Se decidir usar o Coral como cor de destaque em outro lugar
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':

@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
 export const CardImage = styled.img.attrs({
-  className: "w-full object-cover"
+  className: "w-full object-cover  "
 })`
   height: 200px; 
 `;
 export const CardContainer = styled.div.attrs({
-  className: "px-6 py-4",
+  className: "px-6 py-4 ",
 })``;
 
 export const CardTitle = styled.h2.attrs({
@@ -15,7 +15,7 @@ export const CardTitle = styled.h2.attrs({
 
 
 export const CardDescription = styled.p.attrs({
-  className: "text-gray-700 text-sm",
+  className: "text-gray-700 text-sm ",
 })`
   height: 5.6em; 
   overflow: hidden;
@@ -28,7 +28,7 @@ export const TagContainer = styled.div.attrs({
 })``;
 
 export const Tag = styled.span.attrs({
-  className: "bg-blue-100 text-blue-800 rounded-full px-3 py-1 text-xs font-semibold mr-2 mb-2",
+  className: "bg-coral text-whisper  rounded-full px-3 py-1 text-xs font-semibold mr-2 mb-2",
 })``;
 
 export const Section = styled.section.attrs({
@@ -78,7 +78,7 @@ export const PatchVersion = styled.small.attrs({
   z-index: 10;
 `;
 export const Card = styled.div.attrs({
-  className: "relative m-4 rounded-lg shadow-lg my-4 mx-2 overflow-hidden max-w-xs w-full ",
+  className: "relative m-4 rounded-lg shadow-lg my-4 mx-2 overflow-hidden max-w-xs w-full bg-whisper",
 })`
   transition: transform 0.3s ease-in-out;
   &:hover {
@@ -90,7 +90,7 @@ export const Card = styled.div.attrs({
 `;
 
 export const CardInner = styled.div.attrs({
-  className: "rounded-lg shadow-lg bg-white",
+  className: "rounded-lg shadow-lg bg-white bg-whisper",
 })`
   position: relative;
   width: 100%;
@@ -104,13 +104,13 @@ export const CardInner = styled.div.attrs({
 `;
 
 export const CardFront = styled.div.attrs({
-  className: "absolute top-0 left-0 w-full h-full rounded-lg",
+  className: "absolute top-0 left-0 w-full h-full rounded-lg bg-whisper",
 })`
   backface-visibility: hidden;
 `;
 
 export const CardBack = styled.div.attrs({
-  className: "absolute top-0 left-0 w-full h-full rounded-lg",
+  className: "absolute top-0 left-0 w-full h-full rounded-lg bg-whisper",
 })`
   backface-visibility: hidden;
   transform: rotateY(180deg);
