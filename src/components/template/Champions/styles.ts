@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 
 export const CardImage = styled.img.attrs({
-  className: "w-full object-cover  "
+  className: "w-full object-cover h-64"
 })`
-  height: 200px; 
+  height: 280; 
+  object-fit: cover;
+  object-position: center top; 
 `;
 export const CardContainer = styled.div.attrs({
   className: "px-6 py-4 ",

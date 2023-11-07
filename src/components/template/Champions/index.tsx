@@ -1,14 +1,15 @@
 // ChampionCard.tsx
 import React, { useState } from 'react';
 import {
-  CardImage, CardContainer, CardTitle, CardDescription, TagContainer, Tag, AttrContainer, Attribute, Section, SectionTitle, PatchVersion, 
+  CardImage, CardContainer, CardTitle, CardDescription, TagContainer, Tag, AttrContainer, Attribute, Section, SectionTitle, PatchVersion,
   Card,
   CardInner,
   CardFront,
   CardBack,
 } from './styles';
 
-
+// https://ddragon.leagueoflegends.com/cdn/13.19.1/img/champion/loading/Aatrox_0
+// http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_0.jpg
 interface ChampionCardProps {
   champion: {
     id: string;
@@ -16,9 +17,6 @@ interface ChampionCardProps {
     title: string;
     blurb: string;
     version: string;
-    image: {
-      full: string;
-    };
     tags: string[];
     stats: {
       hp: number;
@@ -43,10 +41,10 @@ interface ChampionCardProps {
     };
   };
 }
-const url = process.env.BACKEND_URL;
+const url = 'http://ddragon.leagueoflegends.com/cdn/img/champion/loading/';
 
 const ChampionCard: React.FC<ChampionCardProps> = ({ champion }) => {
-  const { name, title, blurb, image, tags, stats, version } = champion;
+  const { name, title, blurb, id, tags, stats, version } = champion;
   const [isFlipped, setIsFlipped] = useState(false);
   const handleFlip = () => {
     setIsFlipped(!isFlipped);
@@ -56,7 +54,7 @@ const ChampionCard: React.FC<ChampionCardProps> = ({ champion }) => {
     <Card onClick={handleFlip}>
       <CardInner className={isFlipped ? 'flipped' : ''}>
         <CardFront>
-          <CardImage src={`${url + `/img/champion/` + image.full}`} alt={`Image of ${name}`} />
+          <CardImage src={`${url + id + `_0.jpg`}`} alt={`Image of ${name}`} />
           <CardContainer>
             <CardTitle>{name} - {title}</CardTitle>
             <CardDescription>{blurb}</CardDescription>
