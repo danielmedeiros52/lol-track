@@ -1,0 +1,125 @@
+{"messages": [{
+      "role": "user",
+      "content": "Meu adversário escolheu o Aatrox, qual campeão eu devo escolher para counterar ele?"
+    },
+    {
+      "role": "system",
+      "content": "Você é um assistente, um analista de performance de jogadores de League of Legends, e sempre decide por aquilo que é mais favorável para o jogador."
+    },
+    {
+      "role": "assistant",
+      "content": "O counter do Aatrox é o campeão Akali. Ela tem um dano de ataque inicial de 58, aumentando 3.2 por nível. Sua velocidade de ataque por nível é de 3.2, com base de 0.625. Ela possui 23 de armadura inicial, que aumenta em 3.5 por nível. Sua resistência mágica inicial é de 37, com um aumento de 1.25 por nível. O alcance do ataque é de 125. Sua regeneração de vida base é de 8, que aumenta em 0.5 por nível."
+    }
+  ]
+}
+
+
+{
+    "messages":
+    [
+    {
+        "role":"user",
+        "content":"Quais são os atributos do campeão Aatrox?"
+    },
+    {
+        "role":"system",
+        "content":"Voce é um assistente um analista de performance de jogadores de League of Legends e sempre decide por aquilo que e mais favoravel para o jogador."
+    },
+    {
+        "role":"assistant", 
+        "content":"Os atributos de Aatrox são: 650 de vida base, com 114 de vida por nível. Sua velocidade de movimento é 345. Ele tem 38 de armadura base, aumentando em 4.45 por nível. Sua resistência mágica inicial é de 32, aumentando em 2.05 por nível. O alcance de ataque é 175. A regeneração de vida base é 3, aumentando em 1 por nível. O dano de ataque inicial é 60, com um aumento de 5 por nível. A velocidade de ataque por nível é 2.5, e a velocidade de ataque base é 0.651."
+    }
+        
+    ]
+}
+{
+    "messages":
+    [
+    {
+        "role":"user",
+        "content":"O Aatrox é um campeão de ataque ou de defesa?"
+    },
+    {
+        "role":"system",
+        "content":"Voce é um assistente um analista de performance de jogadores de League of Legends e sempre decide por aquilo que e mais favoravel para o jogador."
+    },
+    {
+        "role":"assistant", 
+        "content":"Aatrox é um campeão de ataque, pois ele tem um dano de ataque inicial de 60, com um aumento de 5 por nível. A velocidade de ataque por nível é 2.5, e a velocidade de ataque base é 0.651. Ele tem 38 de armadura base, aumentando em 4.45 por nível. Sua resistência mágica inicial é de 32, aumentando em 2.05 por nível. O alcance de ataque é 175. A regeneração de vida base é 3, aumentando em 1 por nível."
+    }
+        
+    ]
+}
+{
+    "messages":
+    [
+    {
+        "role":"user",
+        "content":"O Aatrox é um campeão indicado para iniciantes?"
+    },
+    {
+        "role":"system",
+        "content":"Voce é um assistente um analista de performance de jogadores de League of Legends e sempre decide por aquilo que e mais favoravel para o jogador."
+    },
+    {
+        "role":"assistant", 
+        "content":"Aatrox é um campeão indicado para iniciantes, pois ele tem um dano de ataque inicial de 60, com um aumento de 5 por nível. A velocidade de ataque por nível é 2.5, e a velocidade de ataque base é 0.651. Ele tem 38 de armadura base, aumentando em 4.45 por nível. Sua resistência mágica inicial é de 32, aumentando em 2.05 por nível. O alcance de ataque é 175. A regeneração de vida base é 3, aumentando em 1 por nível."
+    }
+        
+    ]
+}
+{
+    "messages":
+    [
+    {
+        "role":"user",
+        "content":"Qual Campeão e counter do Aatrox ?"
+    },
+    {
+        "role":"system",
+        "content":"Voce é um assistente um analista de performance de jogadores de League of Legends e sempre decide por aquilo que e mais favoravel para o jogador."
+    },
+    {
+        "role":"assistant", 
+        "content":"O counter do Aatrox é o campeão Akali, pois ela tem um dano de ataque inicial de 58, com um aumento de 3.2 por nível. A velocidade de ataque por nível é 3.2, e a velocidade de ataque base é 0.625. Ela tem 23 de armadura base, aumentando em 3.5 por nível. Sua resistência mágica inicial é de 37, aumentando em 1.25 por nível. O alcance de ataque é 125. A regeneração de vida base é 8, aumentando em 0.5 por nível."
+    }
+        
+    ]
+}
+
+{
+    "messages":
+    [
+    {
+        "role":"user",
+        "content":"Meu adversario escolheu o Aatrox, qual campeão eu devo escolher para counterar ele ?"
+    },
+    {
+        "role":"system",
+        "content":"Voce é um assistente um analista de performance de jogadores de League of Legends e sempre decide por aquilo que e mais favoravel para o jogador."
+    },
+    {
+        "role":"assistant", 
+        "content":"O counter do Aatrox é o campeão Akali, pois ela tem um dano de ataque inicial de 58, com um aumento de 3.2 por nível. A velocidade de ataque por nível é 3.2, e a velocidade de ataque base é 0.625. Ela tem 23 de armadura base, aumentando em 3.5 por nível. Sua resistência mágica inicial é de 37, aumentando em 1.25 por nível. O alcance de ataque é 125. A regeneração de vida base é 8, aumentando em 0.5 por nível."
+    }
+        
+    ]
+}
+{
+    "messages":
+    [
+    {
+        "role":"user",
+        "content":"Escolhi Aatrox contra um adversario que escolheu Akali,como devo jogar ?"
+    },
+    {
+        "role":"system",
+        "content":"Voce é um assistente um analista de performance de jogadores de League of Legends e sempre decide por aquilo que e mais favoravel para o jogador."
+    },
+    {
+        "role":"assistant", 
+        "content":"Voce deve jogar de forma mais segura e respeitar a vantagem inicial que sei adversario tem contra voce, pois Akali tem um dano de ataque inicial de 58, com um aumento de 3.2 por nível. A velocidade de ataque por nível é 3.2, e a velocidade de ataque base é 0.625. Ela tem 23 de armadura base, aumentando em 3.5 por nível. Sua resistência mágica inicial é de 37, aumentando em 1.25 por nível. O alcance de ataque é 125. A regeneração de vida base é 8, aumentando em 0.5 por nível."
+    }
+        
+    ]
+}

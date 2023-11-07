@@ -3,6 +3,7 @@ import React from 'react';
 import SEO from '@/components/atoms/SEO';
 import { getAllChampions } from '@/actions/riot';
 import ChampionCard from '@/components/template/Champions';
+import { trainModel } from '@/actions/openai';
 const seoInfo = {
   title: 'LoL | Home',
   url: 'http://localhost:3000/',
@@ -15,9 +16,11 @@ const seoInfo = {
   }
 };
 
-const Home = ({ data }) => {
+const Home = ({ data, openai }) => {
   const champions = Object.values(data.data);
   console.log(champions)
+  console.log("openai", openai)
+
 
   return (
     <>
@@ -35,6 +38,7 @@ const Home = ({ data }) => {
 
 export async function getServerSideProps() {
   const data = await getAllChampions();
+  // const openai = await trainModel();
   return { props: { data } };
 }
 

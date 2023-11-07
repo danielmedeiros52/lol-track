@@ -1,8 +1,8 @@
-import api from '@/api/api';
+import riotApi from '@/api/riotApi';
 
 
 export const getAllChampions = () =>
-  api.champions
+  riotApi.champions
     .getAllChampions()
     .then((response) => Promise.resolve(response.data))
     .catch((e) => Promise.reject(e.response));

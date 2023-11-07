@@ -1,10 +1,6 @@
 import axios from './axios';
 
 const apiroutes = {
-champions:{
-getAllChampions: () => axios.get('/data/pt_BR/champion.json'),
-},
-
   payment: {
     createPayment: (data: any) => axios.post('/payments/payment/', data),
     createMembership: (data: any) => axios.post('/payments/create-membership/', data)
